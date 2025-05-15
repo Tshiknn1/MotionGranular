@@ -10,12 +10,18 @@
 
 #include "MotionRemote.h"
 
-#define _WIN32_WINNT 0x601
-#include <WinSock2.h>
+#if defined(_WIN32)
+    #define _WIN32_WINNT 0x601
+    #include <WinSock2.h>
+#else
+    #include <sys/socket.h>
+    #include <sys/types.h>
+#endif
 #include <string>
 
 
 MotionRemote::MotionRemote(const char* ipAddress, int port) {
+#ifdef _WIN32
     WSADATA wsaData;
 
     // Initialize Winsock
@@ -25,6 +31,7 @@ MotionRemote::MotionRemote(const char* ipAddress, int port) {
         OutputDebugString(std::to_string(result).c_str());
         OutputDebugString("\n");
     }
+#endif
 
     OutputDebugString(ipAddress);
     OutputDebugString(":");
@@ -50,7 +57,9 @@ MotionRemote::~MotionRemote() {
     }
 
     closesocket(sockfd_);
+#ifdef _WIN32
     WSACleanup();
+#endif
 }
 
 
