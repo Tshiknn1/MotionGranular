@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="A1Xsj1" name="MotionGranular" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="CDGYwg" name="MotionGranular">
+    <GROUP id="{6A90F50D-2253-B5C7-9382-F0A04296BE53}" name="Source">
+      <FILE id="TEZp1M" name="FileReader.cpp" compile="1" resource="0" file="Source/FileReader.cpp"/>
+      <FILE id="XKSoiz" name="MotionGrain.cpp" compile="1" resource="0" file="Source/MotionGrain.cpp"/>
+      <FILE id="iVqt7S" name="MotionGrain.h" compile="0" resource="0" file="Source/MotionGrain.h"/>
+      <FILE id="bhdpq2" name="MotionRemote.cpp" compile="1" resource="0"
+            file="Source/MotionRemote.cpp"/>
+      <FILE id="L1lmap" name="MotionRemote.h" compile="0" resource="0" file="Source/MotionRemote.h"/>
+      <FILE id="nbYUW9" name="MotionRemoteInterpreter.cpp" compile="1" resource="0"
+            file="Source/MotionRemoteInterpreter.cpp"/>
+      <FILE id="qAVWFK" name="MotionRemoteInterpreter.h" compile="0" resource="0"
+            file="Source/MotionRemoteInterpreter.h"/>
+      <FILE id="g9ngKq" name="FileReader.h" compile="0" resource="0" file="Source/FileReader.h"/>
+      <FILE id="Piuj5B" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="nDNNbv" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="Fu2Rau" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="pFoFn3" name="MotionGranular.cpp" compile="1" resource="0"
+            file="Source/MotionGranular.cpp"/>
+      <FILE id="yEo5eD" name="MotionGranular.h" compile="0" resource="0"
+            file="Source/MotionGranular.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
